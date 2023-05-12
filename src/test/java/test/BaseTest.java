@@ -24,7 +24,7 @@ public abstract class BaseTest {
         Configuration.timeout = 7000;
         Configuration.pageLoadTimeout = 40000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\", \"--remote-debugging-port=9222\"");
+        System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
     }
 
    @AfterAll
