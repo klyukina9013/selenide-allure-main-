@@ -1,4 +1,4 @@
-name: Run ReqRes test
+name: Run Booking tests
 
 on:
   push
@@ -17,12 +17,12 @@ jobs:
         run: ./cm selenoid start --vnc
       - name: "Запуск selenoid-ui"
         run: ./cm selenoid-ui start
-      - name: "Использование ветки main репозитория"
+      - name: "Использование main репозитория"
         uses: actions/checkout@v3
       - name: "Запуск тестов"
         run: mvn clean test
         continue-on-error: true
-      - name: "Генерация allure-report"
+      - name: "Генерация allure report"
         uses: simple-elf/allure-report-action@master
         id: allure-report
         with:
@@ -31,7 +31,7 @@ jobs:
           allure_report: target/allure-report
           allure_history: target/allure-history
 
-      - name: "Создание ветки gh-pages, содержащей allure report"
+      - name: "Создание ветки gh-pages содержащей allure report"
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
