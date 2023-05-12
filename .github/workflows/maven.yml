@@ -1,6 +1,7 @@
 name: Run ReqRes test
 
-on: push
+on:
+  push
 
 jobs:
   run_tests:
@@ -9,7 +10,7 @@ jobs:
     steps:
 
       - name: "Скачивание selenoid"
-        run: curl -s https://aerokube.com/cm/bash   | bash
+        run: curl -s https://aerokube.com/cm/bash  | bash
       - name: "Расширение прав на запуск selenoid"
         run: chmod +x ./cm
       - name: "Запуск selenoid"
