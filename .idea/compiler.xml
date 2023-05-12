@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Allure" />
+        <module name="page_object" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Allure" target="17" />
+      <module name="selenide-allure-main" target="20" />
     </bytecodeTargetLevel>
   </component>
 </project>
