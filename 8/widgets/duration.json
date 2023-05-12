@@ -1,1 +1,0 @@
-[{"uid":"3b8195861c76b5dd","name":"hotels()","time":{"start":1683903073837,"stop":1683903074991,"duration":1154},"status":"broken","severity":"normal"},{"uid":"5a5f1578df978f95","name":"xCar()","time":{"start":1683903069646,"stop":1683903073624,"duration":3978},"status":"broken","severity":"blocker"}]
