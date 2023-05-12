@@ -1,0 +1,9 @@
+test/MyOwnTest.class
+config/ProjectConfig.class
+pages/CarSearchPage.class
+pages/HotelSearchPage.class
+pages/HomePage.class
+pages/DataOfUsersPage.class
+test/HomeWorkTest.class
+pages/ChoiceOfCarsPage.class
+test/BaseTest.class

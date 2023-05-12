@@ -1,0 +1,33 @@
+<html><head><script>
+        var cookieDesc = Object.getOwnPropertyDescriptor(Document.prototype, 'cookie') ||
+            Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie');
+        if (cookieDesc && cookieDesc.configurable) {
+            Object.defineProperty(document, 'cookie', {
+                configurable: true,
+                get: function () {
+                    return cookieDesc.get.call(document);
+                },
+                set: function (val) {
+                    if(val) {
+                        if(val.match(/[ ]domain=[.]booking.com/) === null) {
+
+                            if(val.indexOf(" domain=") !== -1) {
+                                val = val.replace(/[ ]domain=[]/, ' domain=cars.booking.com');
+                            }
+                            else {
+                                val += "; domain=cars.booking.com";
+                            }
+                        }
+                    }
+                    cookieDesc.set.call(document, val);
+                }
+            });
+        }
+    </script>
+
+<script type="text/javascript" src="/web/static/public/js/scriptpolicy-booking.js?130" data-domain-script="3228cb28-f77f-47d0-a796-ba8b3f4bdff4"></script>
+<link rel="stylesheet" type="text/css" href="/css/notification-banners.css?v=8">
+<link rel="stylesheet" type="text/css" href="/css/ui.css">
+<link rel="stylesheet" type="text/css" href="/css/cta.css?v=8">
+<link type="text/css" rel="stylesheet" href="/css/shared/rc-global.v4.min.css">
+<script src="/js/shared/tj.shared.critical.min.js"></script></head></html>
