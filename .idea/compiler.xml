@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="page_object" />
+        <module name="allureMavenTests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="page_object" target="18" />
       <module name="selenide-allure-main" target="20" />
     </bytecodeTargetLevel>
   </component>
