@@ -20,6 +20,7 @@ public abstract class BaseTest {
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
+        Configuration.headless = true;
         Configuration.browserSize = "1366x768";
         Configuration.timeout = 7000;
         Configuration.pageLoadTimeout = 40000;
