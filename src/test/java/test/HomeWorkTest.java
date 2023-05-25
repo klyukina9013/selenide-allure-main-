@@ -23,7 +23,7 @@ class HomeWorkTest extends BaseTest {
         HotelSearchPage hotelSearchPage = new HotelSearchPage();
 
         homePage.openPage()
-                .acceptCookies()
+               // .acceptCookies()
                 .findByCity(cityName)
                 .findByArrivalDate()
                 .findByDateOfDeparture();

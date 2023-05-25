@@ -31,7 +31,7 @@ class MyOwnTest extends BaseTest {
 
 
         homePage.openPage()
-                .acceptCookies()
+               // .acceptCookies()
                 //.closeGenius()
                 .pickupCar();
 
